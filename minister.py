@@ -1,7 +1,21 @@
 import random
 
 class Minister:
-    def __init__(self, name, age, loyalty, honesty, rank, money, genom_a, genom_b, disposition_a, disposition_b, admin, combat, greed, health):
+    def __init__(self,
+                 name=random.randint(40,80),
+                 age=random.randint(20,50),
+                 loyalty=random.randint(40,80),
+                 honesty=random.randint(40,80),
+                 rank=random.randint(1,9),
+                 money=random.randint(40,80),
+                 genom_a=random.randint(0,100),
+                 genom_b=random.randint(0,100),
+                 disposition_a=random.randint(0,100),
+                 disposition_b=random.randint(0,100),
+                 admin=random.randint(40,80),
+                 combat=random.randint(40,80),
+                 greed=random.randint(40,80),
+                 health=random.randint(40,80)):
         self.name = name
         self.loyalty = loyalty
         self.honesty = honesty
